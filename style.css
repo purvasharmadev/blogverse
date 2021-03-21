@@ -18,6 +18,10 @@ header{
     /* padding-bottom: 1em; */
 }
 
+hr{
+    margin: 1em 1em;
+}
+
 .head-text{
     font-size: 4rem;
     font-weight: 700;
@@ -32,4 +36,18 @@ header{
 }
 
 
+.post-subtitle{
+    color: rgb(172, 11, 118);
+}
 
+.featured-post-title, .post-title{
+    color:black;
+    font-weight: 400;
+
+}
+
+.post-main-info{
+    font-weight: 200;
+    color: black;
+    opacity: 0.8;
+}

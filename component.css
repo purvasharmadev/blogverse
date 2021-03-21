@@ -10,13 +10,21 @@ body{
     margin: 0;
     padding: 1em;
     box-sizing: border-box;
+    font-size: 1.2rem;
+    background: #35373a;
 
 }
 
 
 header{
-    background-image: url("/images/head-bg.jpg");
+    width: 100%;
+    background:var(--primary-color);
+    /* background-image: url("/images/head-bg.jpg"); */
     text-align: center;
+    max-height:180px ;
+    min-height: 100px;
+    height: 200px;
+    position: relative;
 }
 
 button > .nav-links {
@@ -25,10 +33,10 @@ button > .nav-links {
 
 .nav-links{
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color:var(--off-white);
     font-family:var(--nav-font);
-    font-size: 0.6rem;
+    font-size: 1rem;
     letter-spacing: 0.01rem;
 
 }
@@ -41,50 +49,72 @@ button > .nav-links {
     border-bottom-right-radius: 15px;
     background: none; 
     /* margin-left:1em; */
-    padding: 0 1em;
+    padding: 0.3em 1.5em;
 }
 
 
 
-.head-img{
-    height: 50px;
+.logo-img{
+    height: 75px;
+
 }
 
+.hero-text{
+    position: absolute;
+    top: 35%;
+    bottom: 35%;
+    left: 35%;
+    right: 35%;
+}
 
 .head-text{
     font-size: 2rem;
     font-family: var(--nav-font);
     color: var(--off-white);
+  
+
+
+
 }
 
 .head-para{
-    margin-top: -1em;
-    font-size: 1rem;
+    margin-top: 1em;
     color: var(--off-white);
 }
 
 .container{
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
 .nav-container{
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-top: -0.8em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    text-align: center;
+    opacity: .8;
+    line-height: 0.6em;
 }
 nav ul{
     list-style: none;
     display: flex;
     padding: 0;
-    justify-content: center;
+
 }
 nav li{
-    margin: 0 1em;
+    margin: 0.5em 0.3em;
 }
+
+nav a:hover{
+    color: white;
+}
+.float-left{
+    float: left;
+}
+
 .side-nav-head{
-    text-align: left;
+    float: right;
+
 }
 
 
@@ -93,11 +123,39 @@ hr{
     color: black;
 }
 
-@media (max-width:600px){
+@media (max-width:1350px){
     .side-nav-head{
         display:none;
     }
     .nav-container{
+        display: flex;
         justify-content: center;
+    }
+    .hero-text{
+        top: 20%;
+        bottom: 20%;
+        left: 20%;
+        right: 20%;
+    }
+    
+}
+
+@media (max-width:500px){
+    
+   .nav-container{
+       /* background: red; */
+       padding-top: 1em;
+       font-size: 1.8vh;
+   }
+   .nav-links{
+       margin-left: 1em;
+   }
+    .hero-text{
+        bottom: 10%;
+        left:10%;
+        right: 10%;
+        font-size: 20px;
+        padding: 2em 0;
+        /* border: 5px solid white; */
     }
 }

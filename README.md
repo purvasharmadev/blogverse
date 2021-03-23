@@ -8,7 +8,7 @@ responsive website layout created with css float and flexbox.
 ## Overview
 
 ![screenshot](/ss/ss-1.png)
-![screenshot](/ss/ss-2.png)
+
 
 
 an responsive website layout for both desktop and mobile devices
